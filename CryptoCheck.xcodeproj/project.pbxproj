@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7EE47F0DC532186232D62F6 /* Pods_CryptoCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16912A356A11C75F1CB99E33 /* Pods_CryptoCheck.framework */; };
 		EEC8766E2D36419D00390933 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8766C2D36419D00390933 /* HomeViewController.swift */; };
 		EEC8766F2D36419D00390933 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC8766D2D36419D00390933 /* HomeViewController.xib */; };
 		EEC876712D3644CC00390933 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC876702D3644CC00390933 /* Crypto.swift */; };
 		EEC876732D36453F00390933 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC876722D36453F00390933 /* WebService.swift */; };
 		EEC876782D364D4900390933 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC876762D364D4900390933 /* HomeTableViewCell.swift */; };
 		EEC876792D364D4900390933 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC876772D364D4900390933 /* HomeTableViewCell.xib */; };
+		EEC8767B2D3658F300390933 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8767A2D3658F300390933 /* HomeViewModel.swift */; };
 		EEE5EB232D3171E500E0A64F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5EB222D3171E500E0A64F /* AppDelegate.swift */; };
 		EEE5EB252D3171E500E0A64F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5EB242D3171E500E0A64F /* SceneDelegate.swift */; };
 		EEE5EB272D3171E500E0A64F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5EB262D3171E500E0A64F /* ViewController.swift */; };
@@ -22,12 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16912A356A11C75F1CB99E33 /* Pods_CryptoCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8B6BE186098599873F2DB3 /* Pods-CryptoCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCheck.release.xcconfig"; path = "Target Support Files/Pods-CryptoCheck/Pods-CryptoCheck.release.xcconfig"; sourceTree = "<group>"; };
+		B58F06B7D8A35264009ADC38 /* Pods-CryptoCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoCheck.debug.xcconfig"; path = "Target Support Files/Pods-CryptoCheck/Pods-CryptoCheck.debug.xcconfig"; sourceTree = "<group>"; };
 		EEC8766C2D36419D00390933 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EEC8766D2D36419D00390933 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		EEC876702D3644CC00390933 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		EEC876722D36453F00390933 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		EEC876762D364D4900390933 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		EEC876772D364D4900390933 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		EEC8767A2D3658F300390933 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EEE5EB1F2D3171E500E0A64F /* CryptoCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE5EB222D3171E500E0A64F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEE5EB242D3171E500E0A64F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,12 +49,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7EE47F0DC532186232D62F6 /* Pods_CryptoCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		727E7EC045F0EE143F352DAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B58F06B7D8A35264009ADC38 /* Pods-CryptoCheck.debug.xcconfig */,
+				3D8B6BE186098599873F2DB3 /* Pods-CryptoCheck.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4EB45B32566CB30BDC0A57D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16912A356A11C75F1CB99E33 /* Pods_CryptoCheck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EEC876682D36402000390933 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +93,7 @@
 		EEC8766A2D36403200390933 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EEC8767A2D3658F300390933 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -104,6 +129,8 @@
 			children = (
 				EEE5EB212D3171E500E0A64F /* CryptoCheck */,
 				EEE5EB202D3171E500E0A64F /* Products */,
+				727E7EC045F0EE143F352DAE /* Pods */,
+				B4EB45B32566CB30BDC0A57D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEE5EB332D3171E800E0A64F /* Build configuration list for PBXNativeTarget "CryptoCheck" */;
 			buildPhases = (
+				06F568A6D075D32E95E8D966 /* [CP] Check Pods Manifest.lock */,
 				EEE5EB1B2D3171E500E0A64F /* Sources */,
 				EEE5EB1C2D3171E500E0A64F /* Frameworks */,
 				EEE5EB1D2D3171E500E0A64F /* Resources */,
+				C622C035E51F124E0B8DEFE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,7 +198,7 @@
 				};
 			};
 			buildConfigurationList = EEE5EB1A2D3171E500E0A64F /* Build configuration list for PBXProject "CryptoCheck" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -201,6 +230,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06F568A6D075D32E95E8D966 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoCheck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C622C035E51F124E0B8DEFE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoCheck/Pods-CryptoCheck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoCheck/Pods-CryptoCheck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoCheck/Pods-CryptoCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EEE5EB1B2D3171E500E0A64F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -209,6 +280,7 @@
 				EEC876732D36453F00390933 /* WebService.swift in Sources */,
 				EEE5EB272D3171E500E0A64F /* ViewController.swift in Sources */,
 				EEC876782D364D4900390933 /* HomeTableViewCell.swift in Sources */,
+				EEC8767B2D3658F300390933 /* HomeViewModel.swift in Sources */,
 				EEE5EB232D3171E500E0A64F /* AppDelegate.swift in Sources */,
 				EEC876712D3644CC00390933 /* Crypto.swift in Sources */,
 				EEE5EB252D3171E500E0A64F /* SceneDelegate.swift in Sources */,
@@ -275,7 +347,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -338,7 +410,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -359,6 +431,7 @@
 		};
 		EEE5EB342D3171E800E0A64F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B58F06B7D8A35264009ADC38 /* Pods-CryptoCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -387,6 +460,7 @@
 		};
 		EEE5EB352D3171E800E0A64F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D8B6BE186098599873F2DB3 /* Pods-CryptoCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
