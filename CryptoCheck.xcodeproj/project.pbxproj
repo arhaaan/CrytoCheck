@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEC8766E2D36419D00390933 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8766C2D36419D00390933 /* HomeViewController.swift */; };
+		EEC8766F2D36419D00390933 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC8766D2D36419D00390933 /* HomeViewController.xib */; };
 		EEE5EB232D3171E500E0A64F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5EB222D3171E500E0A64F /* AppDelegate.swift */; };
 		EEE5EB252D3171E500E0A64F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5EB242D3171E500E0A64F /* SceneDelegate.swift */; };
 		EEE5EB272D3171E500E0A64F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5EB262D3171E500E0A64F /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EEC8766C2D36419D00390933 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EEC8766D2D36419D00390933 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		EEE5EB1F2D3171E500E0A64F /* CryptoCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE5EB222D3171E500E0A64F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEE5EB242D3171E500E0A64F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EEC876682D36402000390933 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EEC876692D36402900390933 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8766C2D36419D00390933 /* HomeViewController.swift */,
+				EEC8766D2D36419D00390933 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEC8766A2D36403200390933 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEC8766B2D36403C00390933 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
 		EEE5EB162D3171E500E0A64F = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +90,10 @@
 		EEE5EB212D3171E500E0A64F /* CryptoCheck */ = {
 			isa = PBXGroup;
 			children = (
+				EEC8766B2D36403C00390933 /* WebService */,
+				EEC876682D36402000390933 /* Model */,
+				EEC8766A2D36403200390933 /* ViewModel */,
+				EEC876692D36402900390933 /* View */,
 				EEE5EB222D3171E500E0A64F /* AppDelegate.swift */,
 				EEE5EB242D3171E500E0A64F /* SceneDelegate.swift */,
 				EEE5EB262D3171E500E0A64F /* ViewController.swift */,
@@ -128,6 +166,7 @@
 				EEE5EB2C2D3171E800E0A64F /* Assets.xcassets in Resources */,
 				EEE5EB2F2D3171E800E0A64F /* Base in Resources */,
 				EEE5EB2A2D3171E500E0A64F /* Base in Resources */,
+				EEC8766F2D36419D00390933 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +180,7 @@
 				EEE5EB272D3171E500E0A64F /* ViewController.swift in Sources */,
 				EEE5EB232D3171E500E0A64F /* AppDelegate.swift in Sources */,
 				EEE5EB252D3171E500E0A64F /* SceneDelegate.swift in Sources */,
+				EEC8766E2D36419D00390933 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
