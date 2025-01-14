@@ -23,4 +23,11 @@ class HomeTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    public var item: Crypto! {
+        didSet {
+            self.currencyLabel.text = item.currency
+            self.priceLabel.text = item.price
+        }
+    }
+    
 }
