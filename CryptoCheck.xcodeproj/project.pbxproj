@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EEC8766E2D36419D00390933 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC8766C2D36419D00390933 /* HomeViewController.swift */; };
 		EEC8766F2D36419D00390933 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC8766D2D36419D00390933 /* HomeViewController.xib */; };
+		EEC876712D3644CC00390933 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC876702D3644CC00390933 /* Crypto.swift */; };
+		EEC876732D36453F00390933 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC876722D36453F00390933 /* WebService.swift */; };
 		EEE5EB232D3171E500E0A64F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5EB222D3171E500E0A64F /* AppDelegate.swift */; };
 		EEE5EB252D3171E500E0A64F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5EB242D3171E500E0A64F /* SceneDelegate.swift */; };
 		EEE5EB272D3171E500E0A64F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5EB262D3171E500E0A64F /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		EEC8766C2D36419D00390933 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EEC8766D2D36419D00390933 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		EEC876702D3644CC00390933 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		EEC876722D36453F00390933 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		EEE5EB1F2D3171E500E0A64F /* CryptoCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE5EB222D3171E500E0A64F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEE5EB242D3171E500E0A64F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +48,7 @@
 		EEC876682D36402000390933 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EEC876702D3644CC00390933 /* Crypto.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -67,6 +72,7 @@
 		EEC8766B2D36403C00390933 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
+				EEC876722D36453F00390933 /* WebService.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -177,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC876732D36453F00390933 /* WebService.swift in Sources */,
 				EEE5EB272D3171E500E0A64F /* ViewController.swift in Sources */,
 				EEE5EB232D3171E500E0A64F /* AppDelegate.swift in Sources */,
+				EEC876712D3644CC00390933 /* Crypto.swift in Sources */,
 				EEE5EB252D3171E500E0A64F /* SceneDelegate.swift in Sources */,
 				EEC8766E2D36419D00390933 /* HomeViewController.swift in Sources */,
 			);
