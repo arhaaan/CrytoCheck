@@ -9,9 +9,10 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     
     let homeVM = HomeViewModel()
     let disposeBag = DisposeBag()
@@ -23,44 +24,39 @@ class HomeViewController: UIViewController {
         
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
 
-        tableView.dataSource = self
-        tableView.delegate = self
+        tableView.rx.setDelegate(self).disposed(by: disposeBag)
         
         setupBindings()
         homeVM.requestData()
     }
     
     private func setupBindings() {
-        homeVM
-            .error
+        homeVM.loading
+            .bind(to: self.indicatorView.rx.isAnimating)
+            .disposed(by: disposeBag)
+        
+        homeVM.error
             .observe(on: MainScheduler.asyncInstance)
             .subscribe { errorString in
                 print(errorString)
             }
             .disposed(by: disposeBag)
         
-        homeVM
-            .cryptos
+//        homeVM
+//            .cryptos
+//            .observe(on: MainScheduler.asyncInstance)
+//            .subscribe { cryptos in
+//                self.cryptoArray = cryptos
+//                self.tableView.reloadData()
+//            }
+//            .disposed(by: disposeBag)
+        
+        homeVM.cryptos
             .observe(on: MainScheduler.asyncInstance)
-            .subscribe { cryptos in
-                self.cryptoArray = cryptos
-                self.tableView.reloadData()
+            .bind(to: tableView.rx.items(cellIdentifier: "HomeTableViewCell", cellType: HomeTableViewCell.self)) {row,item,cell in
+                cell.item = item
             }
             .disposed(by: disposeBag)
     }
 
-}
-
-extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cryptoArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
-        cell.currencyLabel.text = cryptoArray[indexPath.row].currency
-        cell.priceLabel.text = cryptoArray[indexPath.row].price
-        return cell
-    }
-    
 }
