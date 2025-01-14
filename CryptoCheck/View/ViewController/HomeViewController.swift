@@ -6,10 +6,15 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    let homeVM = HomeViewModel()
+    let disposeBag = DisposeBag()
     
     var cryptoArray = [Crypto]()
     
@@ -21,20 +26,27 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        let urlString = "https://raw.githubusercontent.com/atilsamancioglu/K21-JSONDataSet/master/crypto.json"
-        
-        WebService().getCrypto(url: URL(string: urlString)!) { result in
-            switch result {
-            case .success(let cryptos):
-                print(cryptos)
-                self.cryptoArray = cryptos
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            case .failure(let error):
-                print(error)
+        setupBindings()
+        homeVM.requestData()
+    }
+    
+    private func setupBindings() {
+        homeVM
+            .error
+            .observe(on: MainScheduler.asyncInstance)
+            .subscribe { errorString in
+                print(errorString)
             }
-        }
+            .disposed(by: disposeBag)
+        
+        homeVM
+            .cryptos
+            .observe(on: MainScheduler.asyncInstance)
+            .subscribe { cryptos in
+                self.cryptoArray = cryptos
+                self.tableView.reloadData()
+            }
+            .disposed(by: disposeBag)
     }
 
 }
