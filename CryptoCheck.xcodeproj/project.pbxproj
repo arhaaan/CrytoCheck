@@ -11,6 +11,8 @@
 		EEC8766F2D36419D00390933 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC8766D2D36419D00390933 /* HomeViewController.xib */; };
 		EEC876712D3644CC00390933 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC876702D3644CC00390933 /* Crypto.swift */; };
 		EEC876732D36453F00390933 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC876722D36453F00390933 /* WebService.swift */; };
+		EEC876782D364D4900390933 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC876762D364D4900390933 /* HomeTableViewCell.swift */; };
+		EEC876792D364D4900390933 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC876772D364D4900390933 /* HomeTableViewCell.xib */; };
 		EEE5EB232D3171E500E0A64F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5EB222D3171E500E0A64F /* AppDelegate.swift */; };
 		EEE5EB252D3171E500E0A64F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5EB242D3171E500E0A64F /* SceneDelegate.swift */; };
 		EEE5EB272D3171E500E0A64F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE5EB262D3171E500E0A64F /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 		EEC8766D2D36419D00390933 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		EEC876702D3644CC00390933 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		EEC876722D36453F00390933 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		EEC876762D364D4900390933 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		EEC876772D364D4900390933 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		EEE5EB1F2D3171E500E0A64F /* CryptoCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE5EB222D3171E500E0A64F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEE5EB242D3171E500E0A64F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +60,8 @@
 		EEC876692D36402900390933 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EEC8766C2D36419D00390933 /* HomeViewController.swift */,
-				EEC8766D2D36419D00390933 /* HomeViewController.xib */,
+				EEC876752D364D3100390933 /* Cell */,
+				EEC876742D364D1F00390933 /* ViewController */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -75,6 +79,24 @@
 				EEC876722D36453F00390933 /* WebService.swift */,
 			);
 			path = WebService;
+			sourceTree = "<group>";
+		};
+		EEC876742D364D1F00390933 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8766C2D36419D00390933 /* HomeViewController.swift */,
+				EEC8766D2D36419D00390933 /* HomeViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EEC876752D364D3100390933 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEC876762D364D4900390933 /* HomeTableViewCell.swift */,
+				EEC876772D364D4900390933 /* HomeTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		EEE5EB162D3171E500E0A64F = {
@@ -172,6 +194,7 @@
 				EEE5EB2C2D3171E800E0A64F /* Assets.xcassets in Resources */,
 				EEE5EB2F2D3171E800E0A64F /* Base in Resources */,
 				EEE5EB2A2D3171E500E0A64F /* Base in Resources */,
+				EEC876792D364D4900390933 /* HomeTableViewCell.xib in Resources */,
 				EEC8766F2D36419D00390933 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +208,7 @@
 			files = (
 				EEC876732D36453F00390933 /* WebService.swift in Sources */,
 				EEE5EB272D3171E500E0A64F /* ViewController.swift in Sources */,
+				EEC876782D364D4900390933 /* HomeTableViewCell.swift in Sources */,
 				EEE5EB232D3171E500E0A64F /* AppDelegate.swift in Sources */,
 				EEC876712D3644CC00390933 /* Crypto.swift in Sources */,
 				EEE5EB252D3171E500E0A64F /* SceneDelegate.swift in Sources */,
